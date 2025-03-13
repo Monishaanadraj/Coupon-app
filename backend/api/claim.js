@@ -2,7 +2,7 @@ import { Pool } from "pg";
 
 const pool = new Pool({
     connectionString: process.env.DB_URL,
-    ssl: { rejectUnauthorized: false }  // Required for Neon.tech
+    ssl: { rejectUnauthorized: false }
 });
 
 export default async function handler(req, res) {
